@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-challenge",
+  "version": "0.1.0",
+  "description": "Recruitment task for NodeJS Junior Backend Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "docker-compose up -d && npm i && export DB_CONNECTION_STRING=\"postgres://api@localhost/api\" && node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "junior",
+    "backend",
+    "recruitment"
+  ],
+  "author": "Kacper Obrzut <kacper@zaven.co>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "lusca": "^1.5.2",
+    "pg": "^7.4.1",
+    "sequelize": "^4.31.2",
+    "umzug": "^2.1.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^3.2.0"
+  }
+}
